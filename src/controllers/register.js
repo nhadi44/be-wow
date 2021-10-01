@@ -25,7 +25,7 @@ exports.getRegisters = async (req, res) => {
     try {
         const registers = await register.findAll({
             attributes: {
-                exclude: ['password', 'fullName', 'role', 'createdAt', 'updatedAt']
+                exclude: ['password', 'role', 'createdAt', 'updatedAt']
             }
         });
 
